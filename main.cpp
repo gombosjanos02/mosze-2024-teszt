@@ -22,5 +22,6 @@ int main()
     } //hiányzó ;
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
+    std::cout << "Szia Jani!" << std::endl;
     return 0;
 }
