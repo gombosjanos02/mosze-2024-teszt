@@ -4,9 +4,9 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS];
+    int *b = new int[NELEMENTS]; //hibás konstans név
     std::cout << '1-100 ertekek duplazasa'
-    for (int i = 0;)
+    for (int i = 0;) //hibás for ciklus
     {
         b[i] = i * 2;
     }
@@ -16,10 +16,10 @@ int main()
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)
+    for (int i = 0; i < N_ELEMENTS, i++) //, ; helyett
     {
         atlag += b[i]
-    }
+    } //hiányzó ;
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
     return 0;
